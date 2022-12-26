@@ -1,0 +1,403 @@
+// ==================================================
+// SETTINGS
+// ==================================================
+
+//COLORS
+
+$color-black: #000000;
+$color-white: #ffffff;
+$color-blue: #3296ff;
+$color-grey: #666666;
+$color-dark: #39383a;
+$color-grafito: #f0f0f0;
+
+//RESPONSIVE
+
+	//DESKTOP
+
+	$screen-desktop-xxl: 2560px;
+	$screen-desktop-xl : 1920px;
+	$screen-desktop-lg : 1600px;
+	$screen-desktop-md : 1440px;
+	$screen-desktop-sm : 1366px;
+	$screen-desktop-xs : 1280px;
+
+	//TABLET
+
+	$screen-tablet-md  : 1024px;
+	$screen-tablet-sm  : 768px;
+
+	//MOBILE
+
+	$screen-mobile-md  : 480px;
+	$screen-mobile-sm  : 320px;
+
+	//BREAKPOINTS
+
+	$break-tablet  : 610px;
+	$break-desktop : 1190px;
+	$break-desktop-lg : 1120px;
+	$break-desktop-xl : 1370px;
+	$break-desktop-xxl : 1500px;
+
+	//FONTS
+
+	$font-a : 'Circular Pro', sans-serif;
+	$a-transition: all ease .4s;
+	$padding-bottom-default: 20px;
+	$container__width		: 1120px;
+	$container__width_lg	: 1180px;
+	$container__width_xl	: 1600px;
+	$total-columns__xxl:	12;
+	$total-columns__xl:	12;	
+	$total-columns__lg:	12;
+	$total-columns__md: 6;
+	$total-columns__sm: 4;
+	$grid-gutter__lg : 50px;
+	$grid-gutter__md : 40px;
+	$grid-gutter__sm : 20px;
+	$container-padding__lg : 24px;
+	$container-padding__md : 40px;
+	$container-padding__sm : 20px;
+
+
+$font-list-menu: (
+	sm:  (
+			font-size		: 35px,
+			line-height 	: 43px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 700,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 45px
+		),
+	lg:  (
+			font-size		: 60px,
+			line-height 	: 82px
+		)
+
+);	
+$font-title-home: (
+	sm:  (
+			font-size		: 31px,
+			line-height 	: 34px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 900,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 45px
+		),
+	lg:  (
+			font-size		: 50px,
+			line-height 	: 45px
+		)
+
+);
+$font-title-kit: (
+	sm:  (
+			font-size		: 30px,
+			line-height 	: 43px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 900,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 36px
+		),
+	lg:  (
+			font-size		: 36px,
+			line-height 	: 45px
+		)
+
+);
+$font-main-text-home: (
+	sm:  (
+			font-size		: 15px,
+			line-height 	: 43px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 700,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 20px
+		),
+	lg:  (
+			font-size		: 25px
+		)
+
+);
+$font-title-post: (
+	sm:  (
+			font-size		: 29px,
+			line-height 	: 35px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 900,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 20px
+		),
+	lg:  (
+			font-size		: 37px
+		)
+
+);
+$font-title-bold: (
+	sm:  (
+			font-size		: 35px,
+			line-height 	: 43px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 700,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 45px
+		),
+	lg:  (
+			font-size		: 50px
+		)
+
+);
+$font-title: (
+	sm:  (
+			font-size		: 25px,
+			line-height 	: 43px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 400,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 30px
+		),
+	lg:  (
+			font-size		: 36px
+		)
+
+);
+$font-subtitle: (
+	sm:  (
+			font-size		: 25px,
+			line-height 	: 43px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 400,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 30px
+		),
+	lg:  (
+			font-size		: 36px
+		)
+
+);
+
+
+$font-text: (
+	sm:  (
+			font-size		: 16px,
+			line-height 	: 30px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 400,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 19px,
+		),
+	lg:  (
+			font-size		: 19px
+		)
+
+);
+
+
+$font-text-quote: (
+	sm:  (
+			font-size		: 16px,
+			line-height 	: 28px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 900,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 20px
+		),
+	lg:  (
+			font-size		: 22px
+		)
+
+);
+
+$font-text-slugs: (
+	sm:  (
+			font-size		: 13px,
+			line-height 	: 28px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 800,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 13px,
+		),
+	lg:  (
+			font-size		: 12px,
+		)
+
+);
+
+$font-text-title-footer: (
+	sm:  (
+			font-size		: 12px,
+			line-height 	: 18px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 700,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 13px
+		),
+	lg:  (
+			font-size		: 13px
+		)
+
+);
+
+$font-text-detail-footer: (
+	sm:  (
+			font-size		: 12px,
+			line-height 	: 25px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 400,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 13px
+		),
+	lg:  (
+			font-size		: 13px
+		)
+
+);
+
+$font-text-categories: (
+	sm:  (
+			font-size		: 12px,
+			line-height 	: 13px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 400,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 13px
+		),
+	lg:  (
+			font-size		: 15px
+		)
+
+);
+
+$font-text-button: (
+	sm:  (
+			font-size		: 20px,
+			line-height 	: 17px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 400,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 18px
+		),
+	lg:  (
+			font-size		: 18px
+		)
+
+);
+
+$font-text-services: (
+	sm:  (
+			font-size		: 20px,
+			line-height 	: 31px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 400,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 26px
+		),
+	lg:  (
+			font-size		: 26px
+		)
+
+);
+$font-text-post: (
+	sm:  (
+			font-size		: 18px,
+			line-height 	: 25px,
+			letter-spacing  : 0px,
+			font-family		: $font-a,
+			font-weight 	: 500,
+			font-style 		: normal
+		),
+	md:	 (
+			font-size		: 18px
+		),
+	lg:  (
+			font-size		: 19px
+		)
+
+);
+
+$root-vars:(
+	sm:(
+		--font-a					: $font-a,
+		--a-transition				: $a-transition,
+		--padding-bottom-default 	: $padding-bottom-default,
+		--color-white				: $color-white,
+		--color-black				: $color-black,
+		--color-blue				: $color-blue,
+		--color-grey				: $color-grey,
+		--container-width			: $container__width,
+		--total-columns				: $total-columns__sm,
+		--grid-gutter				: $grid-gutter__sm,
+		--container-padding 		: $container-padding__sm
+		),
+	md:(
+		--total-columns: $total-columns__md,
+		--grid-gutter: $grid-gutter__md,
+		--container-padding: $container-padding__md
+		),
+	lg:(
+		--total-columns		: $total-columns__lg,
+		--grid-gutter		: $grid-gutter__lg,
+		--container-padding : $container-padding__lg,
+		--container-width			: $container__width
+		),
+	xl:(
+		--container-width			: $container__width_lg,
+		--total-columns				: $total-columns__xl,
+				--grid-gutter		: $grid-gutter__lg
+	),
+	xxl:(
+		--container-width			: $container__width_xl,
+		--total-columns				: $total-columns__xxl,
+		--container-padding : $container-padding__lg
+	)
+);
+

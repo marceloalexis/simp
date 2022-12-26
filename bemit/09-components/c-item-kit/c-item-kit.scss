@@ -1,0 +1,68 @@
+.c-item-kit{
+    $p: &;
+    margin-top: 100px;
+    &__container{
+        padding: 80px 0;
+        @include md{
+            padding: 40px 0;
+        }
+    }
+    &__container &__wrapper-image{
+        opacity: 1;
+        @include md{
+         opacity: 0;
+        }
+        
+    }
+    &__container:hover &__wrapper-image{
+        img{
+            transform: scale(0);
+        }
+        opacity: 1;
+        @include md{
+            img{
+                transform: scale(2.8);
+            }     
+        }
+    }
+    & hr{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: $color-blue;
+        outline: none;
+        border: none;
+    }
+    &__wrapper-title h3{
+        margin: 50px 0 10px 0;
+        @include md{
+            margin: 0;
+        }
+    }
+    &__wrapper-slug{
+        & span{
+            color: $color-grey;
+            font-weight: 900;
+            font-size: 59px;
+            @include md{
+                font-size: 19px;
+            }        
+        }
+    }
+    &__wrapper-image{
+        img{
+            display: block;
+            opacity: 1;
+            @include md{
+                display: block;
+                width: 40%;
+                margin: auto;
+            }
+        }
+    }
+    &__wrapper-text{
+        & p{
+            color: $color-grey;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.c-title{
+	$p : &;
+	background-color: $color-black;
+	@include a-set($root-vars);
+	&__col{
+		margin: auto 0 auto 0;
+	}
+	&__wrapper-main{
+		margin-top: 10%;
+	}
+	&__wrapper-title, &__wrapper-subtitle, &__wrapper-categories{
+		color: $color-white;
+		overflow: hidden;
+		position: relative;
+		display: block;
+		padding-bottom: 7px;
+	}
+	&__wrapper-subtitle{
+		margin-top: 4%;
+	}
+	&__main-section{
+		background-color: $color-black;
+		height: 70vh;
+	}
+	&__wrapper-categories ul {
+		margin-top: 6%;
+		& li{
+			border: solid 1px #ffffff;
+			color: $color-white;
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 30px;
+			margin-right: 2.5%;
+
+			@include lg {
+				padding: 15px 25px;
+				margin-right: 1.5%;
+			}
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.c-info-text{
+    @include a-set($root-vars);
+    $p: &;
+
+    background: $color-black;
+    text-align: center;
+    height: 70vh;
+    display: flex;
+
+    &__container{
+        margin: auto;
+    }
+
+    &__wrapper{
+        color: $color-white;
+        margin: auto;
+    }
+    &__wrapper h3{
+        margin-top: 40px;
+    }
+    &__wrapper p{
+        width: 100%;
+        max-width: 490px;
+        margin: 30px auto 0 auto;
+    }
+
+}

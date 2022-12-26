@@ -1,0 +1,31 @@
+.c-head-blog{
+    ul li{
+        text-transform: uppercase;
+    }
+    &__wrapper-title{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__wrapper-excerpt{
+        margin-bottom: 50px;
+    }
+    &__wrapper-image{
+        height: 30vh;
+        position: relative;
+        overflow: hidden;
+        margin-top:45px;
+        @include lg{
+            height: 45vh;
+        }
+        img{
+
+                width: 100%;
+                background-size: cover;
+                background-position: center;
+                height: auto;
+                position: absolute;
+
+
+        }
+    }
+}

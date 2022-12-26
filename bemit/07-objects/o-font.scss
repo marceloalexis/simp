@@ -1,0 +1,44 @@
+.o-font{
+	&-title-home{
+		@include a-set($font-title-home);
+	}
+	&-list-menu{
+		@include a-set($font-list-menu);
+	}
+	&-title-kit{
+		@include a-set($font-title-kit);
+	}
+	&-title-post{
+		@include a-set($font-title-post);
+	}
+	&-text-post{
+		@include a-set($font-text-post);
+	}
+	&-text-main-home{
+		@include a-set($font-main-text-home);
+	}
+	&-title{
+		@include a-set($font-title);
+	}
+	&-title-bold{
+		@include a-set($font-title-bold);
+	}
+	&-subtitle{
+		@include a-set($font-subtitle);
+	}
+	&-text{
+		@include a-set($font-text);
+	}
+	&-text-quote{
+		@include a-set($font-text-quote);
+	}
+	&-text-slugs{
+		@include a-set($font-text-slugs);
+	}
+	&-text-services{
+		@include a-set($font-text-services);
+	}
+	&-categories{
+		@include a-set($font-text-categories);
+	}
+}

@@ -1,0 +1,27 @@
+.u-display{
+
+	&-none{
+
+		display: none !important;
+
+		&\@only-sm{
+			@include only-sm{
+				display: none !important;
+			}
+		}
+
+		&\@only-md{
+			@include only-md{
+				display: none !important;
+			}
+		}
+
+		&\@only-lg{
+			@include only-lg{
+				display: none !important;
+			}
+		}
+
+
+	}
+}

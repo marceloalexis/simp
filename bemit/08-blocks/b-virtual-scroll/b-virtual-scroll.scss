@@ -1,0 +1,19 @@
+.b-virtual-scroll{
+
+	.has-scroll-smooth &{
+
+		min-height: 100vh;
+		min-height: calc(var(--vh, 1vh) * 100);
+	}
+}
+
+.c-scrollbar{
+	&_thumb{
+		margin: 0px;
+		width: 4px;
+		border-radius: 0px;
+		right: 1px;
+		opacity: 1;
+		background-color: $color-dark;
+	}
+}

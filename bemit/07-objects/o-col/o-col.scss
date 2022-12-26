@@ -1,0 +1,127 @@
+[class^="o-col-"],
+[class*=" o-col-"]{
+
+	padding-left: calc( var(--grid-gutter) / 2);
+	padding-right: calc( var(--grid-gutter) / 2);
+	color: var(--color-black);
+}
+
+.o-col{
+
+	&--no-padding{
+		padding: 0;
+	}	
+	@for $i from 1 through $total-columns__sm{
+
+		&-#{$i}{
+			&\@sm{
+				@include sm{
+					@include a-col($i);
+				}
+			}
+		}
+
+		&-push{
+			&-#{$i}{
+				&\@sm{
+					@include sm{
+						@include a-col-push($i);
+					}
+				}
+			}
+		}
+
+	}
+
+
+	@for $i from 1 through $total-columns__md{
+
+		&-#{$i}{
+			&\@md{
+				@include md{
+					@include a-col($i);
+				}
+			}
+		}
+
+		&-push{
+			&-#{$i}{
+				&\@md{
+					@include md{
+						@include a-col-push($i);
+					}
+				}
+			}
+		}
+
+	}
+
+	@for $i from 1 through $total-columns__lg{
+
+		&-#{$i}{
+			&\@lg{
+				@include lg{
+					@include a-col($i);
+				}
+			}
+		}
+
+		&-push{
+			&-#{$i}{
+				&\@lg{
+					@include lg{
+						@include a-col-push($i);
+					}
+				}
+			}
+		}
+
+	}
+
+	@for $i from 1 through $total-columns__xl{
+
+		&-#{$i}{
+			&\@xl{
+				@include xl{
+					@include a-col($i);
+				}
+			}
+		}
+
+		&-push{
+			&-#{$i}{
+				&\@xl{
+					@include xl{
+						@include a-col-push($i);
+					}
+				}
+			}
+		}
+
+	}
+
+	@for $i from 1 through $total-columns__xxl{
+
+		&-#{$i}{
+			&\@xxl{
+				@include xxl{
+					@include a-col($i);
+				}
+			}
+		}
+
+		&-push{
+			&-#{$i}{
+				&\@xxl{
+					@include xxl{
+						@include a-col-push($i);
+					}
+				}
+			}
+		}
+
+	}
+
+
+
+}

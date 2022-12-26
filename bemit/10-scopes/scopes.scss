@@ -1,0 +1,23 @@
+.s-wysiwyg{
+
+	h1, h2, h3, h4, h5, h6, p{
+		padding-bottom: var(--padding-bottom-default);
+
+		&:last-child{
+			padding-bottom: 0px;
+		}
+
+		&:empty{
+			display: none;
+		}
+
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		@include a-set($font-title);
+	}
+
+	p, span{
+		@include a-set($font-text);
+	}
+}

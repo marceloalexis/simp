@@ -1,0 +1,118 @@
+.c-post{
+	&__container{
+		@include lg{
+			max-width: 990px;
+			margin: 0 auto;
+		}
+		@include xl{
+			max-width: 1100px;
+			margin: 0 auto;
+		}
+		@include xxl{
+			max-width: 1500px;
+			margin: 0 auto;
+		}
+	}
+	&__slide{
+		max-width: 100%;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		flex: 1 0 auto;
+		margin: 3% auto;
+
+		@include md{
+			width: 100%;
+		}
+		@include sm{
+			width: 100%;
+		}
+	}
+	&__slide-content{
+		display: block;
+		width: 100%;
+		position: relative;
+	}
+	&__slide-button{
+		display: block;
+		width: 100%;
+	}
+	&__slide-wrapper-title{
+		display: block;
+		width: 100%;
+	}
+	&__slide-wrapper-title ul{
+		display: block;
+		width: 100%;
+		margin-top: 2%;
+		& li{
+			color: $color-black;
+			border: solid 1px #ffffff;
+    	padding: 10px 15px;
+    	border-radius: 20px;
+    	display: inline-block;
+    	margin-right: 10px;
+			@include lg{
+				padding: 10px 30px;
+			}
+		}
+	}
+	&__slide-title{
+		color: $color-black;
+		display: block;
+		width: 100%;
+	}
+	&__slide-box-image{
+		top: 50%;
+		left: 50%;
+		display: block;
+		width: 950px;
+		max-width: 100%;
+		pointer-events: none;
+		transition: opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+
+		.is-mouse-enter &{
+			opacity: 1;
+		}
+	}
+	&__slide-wrapper-image{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__slide-image{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__overlay-image{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 50%;
+		background: rgb(0,0,0);
+		background: -moz-linear-gradient(180deg, rgba(0,0,0,0) 29%, rgba(0,0,0,0.6166841736694677) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 29%, rgba(0,0,0,0.6166841736694677) 100%);
+		background: linear-gradient(180deg, rgba(0,0,0,0) 29%, rgba(0,0,0,0.6166841736694677) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+	}
+	&__btn-proyectos{
+		color: $color-black;
+		display: inline-block;
+		margin-top: 15px;
+		transition: cubic-bezier(.27,.82,.57,.84) all .4s ;
+		opacity: 1;
+		@include lg{
+			display: block;
+		}
+	}
+	&__wrapper-date{
+		font-weight: 900;
+		margin-top: 30px;
+		margin-bottom: 15px;
+	}
+	&__wrapper-excerpt{
+		margin-top: 30px;
+	}
+
+}

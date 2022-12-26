@@ -1,0 +1,25 @@
+.c-title-text{
+    $p: &;
+    & h4{
+        font-weight: 900;
+        font-size: 27px;
+        line-height: 32px;
+        color: $color-blue;
+        font-size: 25px;
+        @include lg{
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+    }
+    &__wrapper-text{
+        margin-top: 15px;
+        font-size: 19px;
+        line-height: 31px;
+        @include lg{
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 0px;
+        }
+        margin-bottom: 50px;
+    }
+}

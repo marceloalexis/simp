@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('circular-book/CircularPro-Book.eot');
+    src: url('circular-book/CircularPro-Book.eot?#iefix') format('embedded-opentype'),
+         url('circular-book/CircularPro-Book.woff2') format('woff2'),
+         url('circular-book/CircularPro-Book.woff') format('woff'),
+         url('circular-book/CircularPro-Book.ttf')  format('truetype'),
+         url('circular-book/CircularPro-Book.svg#Circular Pro') format('svg');
+        font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('circular-medium/CircularPro-Medium.eot');
+    src: url('circular-medium/CircularPro-Medium.eot?#iefix') format('embedded-opentype'),
+         url('circular-medium/CircularPro-Medium.woff2') format('woff2'),
+         url('circular-medium/CircularPro-Medium.woff') format('woff'),
+         url('circular-medium/CircularPro-Medium.ttf')  format('truetype'),
+         url('circular-medium/CircularPro-Medium.svg#Circular Pro') format('svg');
+         font-display:auto;font-style:normal;font-weight:600;font-stretch:normal;
+}
+
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('circular-bold/CircularPro-Bold.eot');
+    src: url('circular-bold/CircularPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('circular-bold/CircularPro-Bold.woff2') format('woff2'),
+         url('circular-bold/CircularPro-Bold.woff') format('woff'),
+         url('circular-bold/CircularPro-Bold.ttf')  format('truetype'),
+         url('circular-bold/CircularPro-Bold.svg#Circular Pro') format('svg');
+         font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('circular-black/CircularPro-Black.eot');
+    src: url('circular-black/CircularPro-Black.eot?#iefix') format('embedded-opentype'),
+         url('circular-black/CircularPro-Black.woff2') format('woff2'),
+         url('circular-black/CircularPro-Black.woff') format('woff'),
+         url('circular-black/CircularPro-Black.ttf')  format('truetype'),
+         url('circular-black/CircularPro-Black.svg#Circular Pro') format('svg');
+         font-display:auto;font-style:normal;font-weight:900;font-stretch:normal;
+}

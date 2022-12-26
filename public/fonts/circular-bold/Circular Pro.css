@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Circular Pro';
+    src: url('fonts/CircularPro-Bold.eot');
+    src: url('fonts/CircularPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CircularPro-Bold.woff2') format('woff2'),
+         url('fonts/CircularPro-Bold.woff') format('woff'),
+         url('fonts/CircularPro-Bold.ttf')  format('truetype'),
+         url('fonts/CircularPro-Bold.svg#Circular Pro') format('svg');
+}

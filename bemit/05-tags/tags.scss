@@ -1,0 +1,66 @@
+html{
+	box-sizing: border-box;
+	-webkit-font-smoothing:  antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: var(--color-white);
+	font-size: 16px;
+	line-height: 24px;
+	font-family: var(--font-a);
+	font-weight: 400;
+	height: 100%;
+}
+
+// DEBUG
+body{
+
+	min-height: 100%;
+	background-color: var(--color-black);
+
+}
+
+
+body{
+	&.is-debug{
+		@include a-debug;
+	}	
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p ,pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend{
+	margin: 0;
+	padding: 0;
+}
+
+b, strong{
+	font-weight: 700;
+}
+
+cite, dfn, em, i{
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: inherit;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+a{
+	cursor: pointer;
+	color: inherit;
+	text-decoration: none;
+	transition:  var(--a-transition);
+}

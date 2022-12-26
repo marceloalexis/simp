@@ -1,0 +1,49 @@
+.c-prev-next{
+    $p: &;
+    padding-bottom: 50px;
+    &__wrapper-image{
+        overflow: hidden;
+        img{
+            width: 100%;
+        }
+    }
+    &__container{
+        margin: 35px 0;
+    }
+    &__wrapper-categories ul li{
+        color: $color-black;
+    }
+    &__wrapper-date{
+        time{
+            color: $color-black;
+            font-size: 15px;
+            font-weight: normal;
+        }
+    }
+    &__post h2{
+        font-weight: 900;
+        margin: 17px 0;
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__wrapper-categories{
+        ul li{
+            text-transform: uppercase;
+        }
+    }
+    &__head-last{
+        margin: 100px 0 50px 0;
+        hr{
+            border: none;
+            border-bottom: solid 1px $color-black;
+            display: block;
+            margin-bottom: 45px;
+        }
+        h4{
+            font-weight: 600;
+        }
+    }
+}

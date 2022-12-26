@@ -1,0 +1,65 @@
+.c-contact-form{
+    &__wrapper-field &__title-first{
+        font-size: 21px;
+        font-weight: 900;
+    }
+    &__wrapper-field{
+        margin-top: 50px;
+    }
+    &__wrapper-field p{
+        color: $color-white;
+        font-size: 13px;    
+    }
+    &__field-radio{
+        display: inline-block;
+        margin-top: 25px;
+        margin-right: 80px;
+        input{
+            font-size: 18px;
+        }
+        input, label{
+            color: $color-white;
+        }
+        label{
+            margin-left: 10px;
+        }
+    }
+    &__field{
+        input{
+            font-size: 18px;
+            padding: 15px 0;
+        }
+        input, label, textarea{
+                width: 100%;
+                color: $color-white;
+                background: transparent;
+                border: none;
+                border-bottom: solid 1px $color-white;
+                outline: none;
+            }
+        textarea{
+            padding: 15px 0;
+            font-size: 18px;
+        }
+
+    }
+    &__field-submit{
+        text-align: center;
+        input{
+            border: solid 1px $color-white;
+            color: $color-white;
+            background-color: transparent;
+            font-weight: 900;
+            padding: 55px 45px;
+            border-radius: 50%;
+            transition: ease all .4s;
+
+            &:hover{
+                color: $color-black;
+                border: solid 1px $color-white;
+                background-color: $color-white;
+                transition: ease all .4s;
+            }
+        }
+    }
+}

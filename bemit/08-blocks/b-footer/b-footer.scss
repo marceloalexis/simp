@@ -1,0 +1,93 @@
+.b-footer{
+	$p : &;
+	background-color: $color-black;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	&__wrapper_logo{
+		margin-bottom: 15px;
+	}
+	&__wrapper_logo{
+		width: 125px;
+		@include lg{
+			width: 130px;
+		}
+		& a{
+			color: var(--color-white);
+		}
+	}
+	&__wrapper_tagline{
+		color: var(--color-blue);
+			@include sm{
+				margin-bottom: 20px;
+			}
+	}
+
+	&__wrapper_tagline h5:first-child{
+		font-weight: 700;
+	}
+
+	&__wrapper_detail_content ul li{
+		color: $color-white;
+		font-weight: 700;
+		margin-bottom: 30px;
+	}
+
+	&__wrapper_details{
+		margin-top: 43px;
+			@include sm{
+				margin-top: 10px;
+			}
+	}
+	&__wrapper_available p{
+		font-size: 12px;
+		color: $color-white;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__wrapper_available ul{
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 15px;
+	}
+	&__wrapper_available ul li {
+		color: #39383a;
+		display: inline-block;
+		width: 40px;
+	}
+	&__wrapper_credits{
+		& ul{
+			& li{
+				font-size: 13px;
+				color: $color-dark;
+			}
+			& li:last-child{
+				font-size: 15px;
+				font-weight: 700;
+			}
+		}
+	}
+	&__legales{
+		padding-top: 70px;
+	}
+	&__title_detail {
+
+	color: var(--color-white);
+	@include a-set($font-text-title-footer);		
+	}
+
+	&__wrapper_detail_content{
+		margin-bottom: 35px;
+			@include sm{
+				margin-bottom: 10px;
+			}
+	}
+	&__wrapper_legal_content{
+		color: $color-white;
+		text-align: right;
+		@include a-set($font-text-detail-footer);
+			@include sm{
+				text-align: left;
+			}
+	}
+
+}
