@@ -38,7 +38,7 @@ const Home = ({dataHome}) =>{
         <meta name="keywords" content={dataHome.seo.metaKeywords}/>
       </Head>
       <div className={`${p}`}>
-        <CBundle></CBundle>
+       <CBundle/>
         <div className={`${p}__block1`}>
         <CVideoLayout 
         dataTitleVideo={dataHome.bHome.bHomeBlockOne.bHomeTitle}
@@ -99,11 +99,11 @@ const Home = ({dataHome}) =>{
             <OCol p={p} cols={{sm: 4, md: 6, lg: 10}}>
               <h3 className={'o-font-title-home'}>{dataHome.bHome.bHomeBlockSix.bHomeText}</h3>
               <button className={'button-simple'}>
-                                                  <div className={`wrapper-btn-proyectos`}><span>< Link href={`/${dataHome.bHome.bHomeBlockSix.bHomeButtonSlug}`}>{dataHome.bHome.bHomeBlockSix.bHomeButtonText}</Link></span></div>
-                                                  <span className={`btn-circle`}>
-                                                    <span className={`arrow`}></span>
-                                                  </span>
-                                                </button>
+                <div className={`wrapper-btn-proyectos`}><span>< Link href={`/${dataHome.bHome.bHomeBlockSix.bHomeButtonSlug}`}>{dataHome.bHome.bHomeBlockSix.bHomeButtonText}</Link></span></div>
+                  <span className={`btn-circle`}>
+                    <span className={`arrow`}></span>
+                  </span>
+                </button>
 
             </OCol>
           </OContainer>

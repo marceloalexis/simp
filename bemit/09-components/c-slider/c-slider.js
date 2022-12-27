@@ -29,7 +29,7 @@ const CSlider = ({ dataSlide }) => {
 	return(
 		<div className={`${p}`}>
 			<OContainer p={p} extraClasses={`o-container--no-padding`}>
-				<OCol cols={{sm:4, md: 2, lg:5}} extraClasses={`o-col--no-padding`}>
+				<OCol p={p} cols={{sm:4, md: 2, lg:5}} extraClasses={`o-col--no-padding image-sw`}>
 						<Swiper
 							className="swiperImage"
 							modules={[Navigation, Controller, EffectFade]}
@@ -61,7 +61,7 @@ const CSlider = ({ dataSlide }) => {
 							</div>
 						</Swiper>
 				</OCol>
-				<OCol cols={{sm: 4, md: 4, lg:7}} extraClasses={`o-col--no-padding`}>
+				<OCol p={p} cols={{sm: 4, md: 4, lg:7}} extraClasses={`o-col--no-padding info-sw`}>
 					
 						<Swiper	
 							pagination= {{
@@ -91,7 +91,7 @@ const CSlider = ({ dataSlide }) => {
 										return(
 											<SwiperSlide key={a.bHomeTitle}>
 											<div className={`${p}__wrapper-content`}>
-												<div className={`${p}__content`}>
+												<div className={`${p}__content info`}>
 													<div className={`${p}__wrapper`}>
 														<h2 className={'o-font-title-home'}>{a.bHomeTitle}</h2>
 													</div>

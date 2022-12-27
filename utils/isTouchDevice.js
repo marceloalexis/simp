@@ -1,12 +1,24 @@
+import { useState, useEffect } from 'react';
+
 const isTouchDevice = () => {
-	if(typeof window === 'undefined') return false
-	const prefixes = ' -webkit- -moz- -o- -ms- '.split(' ')
+const [touchDevice, setTouchDevice] = useState(false);
+
+useEffect(() => {
+
+if (typeof window === 'undefined') return;
+	const prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
 	function mq(query) {
-		return typeof window !== 'undefined' && window.matchMedia(query).matches
+	  return typeof window !== 'undefined' && window.matchMedia(query).matches;
 	}
-	// @its-ignore
-	if('ontouchstart' in window || (window?.DocumentTouch && document instanceof DocumentTouch)) return true
-		const query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('') //include the 'heartz' - https://git.io/vznFH
-	return mq(query)
-}
+	if ('ontouchstart' in window || (window?.DocumentTouch && document instanceof DocumentTouch)) {
+	  setTouchDevice(true);
+	  return;
+	}
+	const query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+	if (mq(query)) setTouchDevice(true);
+}, []);
+
+return touchDevice;
+};
+
 export default isTouchDevice;

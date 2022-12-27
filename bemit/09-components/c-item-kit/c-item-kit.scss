@@ -2,9 +2,9 @@
     $p: &;
     margin-top: 100px;
     &__container{
-        padding: 80px 0;
+        padding: 80px 20px;
         @include md{
-            padding: 40px 0;
+            padding: 40px 20px;
         }
     }
     &__container &__wrapper-image{
@@ -16,7 +16,7 @@
     }
     &__container:hover &__wrapper-image{
         img{
-            transform: scale(0);
+            transform: scale(1);
         }
         opacity: 1;
         @include md{

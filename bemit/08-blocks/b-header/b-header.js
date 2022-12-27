@@ -15,7 +15,7 @@ const Bheader = () => {
 		}
 
 		const buttons = [globalData.buttons_head.map((e) => (
-			<span className={'o-font-text-slugs'} key={e.item_button.slug_button}><Link href=''>{e.item_button.title_button}</Link></span>
+			<span className={'o-font-text-button'} key={e.item_button.slug_button}><Link href=''>{e.item_button.title_button}</Link></span>
 			))]
 		const logoImgLink = globalData.logo.url
 
@@ -23,7 +23,7 @@ const Bheader = () => {
 
 		<div className={`${p}`}>
 			<OContainer p={p}>
-				<OCol p={p} cols={{sm:2, lg: 2}} extraClasses={`${p}__col-logo`}>
+				<OCol p={p} cols={{sm:1, lg: 2}} extraClasses={`${p}__col-logo`}>
 					<div className={`${p}__wrapper`}>
 						<div className={`${p}__wrapper_logo`}>
 							<Link onClick={closeLogo} href="/">
@@ -32,7 +32,7 @@ const Bheader = () => {
 						</div>
 					</div>
 				</OCol>
-				<OCol p={p} cols={{sm:2, lg: 5, lgPush: 4}} extraClasses={`${p}__col-bar`}>
+				<OCol p={p} cols={{sm:3, lg: 5, lgPush: 4}} extraClasses={`${p}__col-bar`}>
 					<div className={`${p}__wrapper`}>
 						<div className={`${p}__wrapper_button`}>
 							<div className={`${p}__button`}>

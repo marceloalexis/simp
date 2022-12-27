@@ -1,9 +1,9 @@
 import React, {useRef, useState} from "react"
 import OCol from "../../07-objects/o-col/o-col.js"
-import OContainer from "../..//07-objects/o-container/o-container.js"
+import OContainer from "../../07-objects/o-container/o-container.js"
 
 
-const CVideoLayout = ({dataTitleVideo, dataSrcVideo}) => {
+const CVideoLayout = ({dataTitleVideo}) => {
     const p = 'c-video'
           const videoRef = useRef(null);
         
@@ -36,7 +36,9 @@ const CVideoLayout = ({dataTitleVideo, dataSrcVideo}) => {
                     <div className={`${p}__wrapper`}>
                         <div className={`${p}__video-layout`}>
                             <div className={`${p}__overlay`}></div>
-                            <video muted={isMuted} ref={videoRef} src={dataSrcVideo} autoPlay loop/>
+                            <video poster={"/sunset-figure.jpg"} muted={isMuted} ref={videoRef} autoPlay loop>
+                            <source src="/simpello-video.mp4" type="video/mp4" />
+                            </video>
                         </div>
                         <div className={`${p}__title-content`}>
                             <h2 className={`o-font-title-home`}>{dataTitleVideo}</h2>
