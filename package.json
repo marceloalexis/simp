@@ -19,6 +19,7 @@
     "framer-motion": "^7.6.4",
     "graphql": "^16.6.0",
     "gsap": "^3.11.3",
+    "js-cookie": "^3.0.1",
     "locomotive-scroll": "^4.1.4",
     "next": "13.0.5",
     "next-transpile-modules": "^9.0.0",

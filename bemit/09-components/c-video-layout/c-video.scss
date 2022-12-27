@@ -32,12 +32,13 @@
         bottom: 20px;
         right: 15px;
         display: none;
+        z-index: 999999;
         ul li{
             display: inline-block;
             color: $color-white;
         }
         @include lg{
-            display: bl;
+            display: block;
         }
     }
     &__overlay{

@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic'
 import { MainProvider } from '../contexts/Main.context.js'
 import BHeader from '../bemit/08-blocks/b-header/b-header.js'
 import BMenu from '../bemit/08-blocks/b-menu/b-menu.js'
+import BCookies from '../bemit/08-blocks/b-cookies/b-cookies.js'
 import {AnimatePresence} from 'framer-motion'
 import { gsap } from "gsap"
 import { ScrollTrigger } from '../node_modules/gsap/dist/ScrollTrigger.js';
@@ -21,7 +22,7 @@ function MyApp({ Component, pageProps, router }) {
       <AnimatePresence mode='wait' initial={false}>
         <Component {...pageProps} key={router.asPath}/>
       </AnimatePresence>
-
+      <BCookies />
       </MainProvider>
     )
 }
