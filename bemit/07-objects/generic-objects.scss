@@ -1,13 +1,3 @@
-.button-black{
-    @include a-set($font-text-button);
-    background: $color-black;
-    color: $color-white;
-    border: solid 1px $color-white;
-    outline: none;
-    margin: 40px;
-    padding: 18px 45px;
-    border-radius: 30px;
-}
 .button-cookies{
     font-size: 16px;
     line-height: 16px;
@@ -55,18 +45,52 @@
     border: solid 1px $color-white;
     transition: ease all .4s cubic-bezier(0.175, 0.85, 0.42, 0.96);
 }
+.button-black{
+    background: transparent;
+    border: none;
+    outline: none;
+    display: inline-flex;
+    a{
+        @include a-set($font-text-button);
+        background: $color-black;
+        color: $color-white;
+        margin: 40px;
+        padding: 18px 45px;
+        border-radius: 30px;
+        border: solid 1px $color-white;
+        transition: all .5s cubic-bezier(0.175, 0.85, 0.42, 0.96);
+    }
+    a:hover{
+        background: $color-white;
+        color: $color-black;
+        transition: all .5s cubic-bezier(0.175, 0.85, 0.42, 0.96);
+        transform: translateY(-10px);
+    }
+}
 .button-black:focus{
     outline: none;
 }
 .button-blue{
-    @include a-set($font-text-button);
-    background: $color-blue;
-    color: $color-white;
+    background-color: transparent;
     border: solid 0px;
     outline: none;
-    margin: 40px;
-    padding: 18px 45px;
-    border-radius: 30px;
+    display: inline-flex;
+    a{
+        @include a-set($font-text-button);
+        background: $color-blue;
+        color: $color-white;
+        margin: 40px;
+        padding: 18px 45px;
+        border-radius: 30px;
+        transition: all .5s cubic-bezier(0.175, 0.85, 0.42, 0.96);
+    }
+    a:hover{
+        background: $color-white;
+        color: $color-black;
+        transition: all .5s cubic-bezier(0.175, 0.85, 0.42, 0.96);
+        transform: translateY(-10px);        
+    }
+
 }
 .button-black:focus{
     outline: none;
@@ -96,7 +120,9 @@
     border: none;
     outline: none;
     position: relative;
-
+    a{
+        padding: 15px 0;
+    }
     & .wrapper-btn-proyectos{
         display: inline-block;
         vertical-align: middle;

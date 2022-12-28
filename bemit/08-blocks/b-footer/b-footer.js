@@ -60,7 +60,7 @@ const BFooter = () => {
 						</div>
 					</div>
 				</OCol>
-				<OCol p={p} cols={{sm: 2, xxl: 2, lgPush: 3}}>
+				<OCol p={p} cols={{sm: 2, xxl: 2, lgPush: 2, lgPush: 4}}>
 					<div className={`${p}__wrapper_details`}>
 						<div className={`${p}__wrapper_detail_content`}>
 								<ul>
@@ -69,7 +69,7 @@ const BFooter = () => {
 						</div>
 					</div>
 				</OCol>
-				<OCol p={p} cols={{sm: 2, lg: 1}}>
+				<OCol p={p} cols={{sm: 2, lg: 2}}>
 					<div className={`${p}__wrapper_details`}>
 						<div className={`${p}__wrapper_detail_content`}>
 								<ul>
@@ -78,7 +78,7 @@ const BFooter = () => {
 						</div>
 					</div>
 				</OCol>
-				<OCol p={p} cols={{sm: 4, lg: 3 , lgPush: 1}}>
+				<OCol p={p} cols={{sm: 4, lg: 2}}>
 					<div className={`${p}__wrapper_details`}>
 						<div className={`${p}__wrapper_detail_content`}>
 								<ul>
@@ -89,7 +89,7 @@ const BFooter = () => {
 				</OCol>
 			</OContainer>
 			<OContainer p={p} extraClasses={`${p}__legales`}>
-				<OCol p={p} cols={{lg: 2}}>
+				<OCol p={p} cols={{lg: 3}}>
 					<div className={`${p}__wrapper_credits`}>
 						<ul>
 							<li>{creditsTitle}</li>
@@ -105,7 +105,7 @@ const BFooter = () => {
 						</ul>
 					</div>
 				</OCol>
-				<OCol p={p} cols={{lg: 7}}>
+				<OCol p={p} cols={{lg: 6}}>
 					<div className={`${p}__wrapper_legal`}>
 						<div className={`${p}__wrapper_legal_content`}>
 							<span>{copy}</span>

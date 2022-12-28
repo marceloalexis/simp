@@ -47,7 +47,7 @@ const Contact = ({id, dataContact}) =>{
                 </div>
             </OCol>
         </OContainer>
-        <OContainer p={p}>
+        <OContainer p={p} extraClasses={'content-cont'}>
             <OCol p={p} cols={{lgPush: 1, lg:3}}>
                 <div className={`${p}__wrapper`}>
                     <div >{cPhoneTitle}</div>

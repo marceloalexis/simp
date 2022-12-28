@@ -7,6 +7,9 @@
             padding: 40px 20px;
         }
     }
+    &__col{
+        margin: auto 0;
+    }
     &__container &__wrapper-image{
         opacity: 1;
         @include md{

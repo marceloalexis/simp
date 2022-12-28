@@ -10,6 +10,7 @@ import CInfoText from "../bemit/09-components/c-info-text/c-info-text.js"
 import CSlider from "../bemit/09-components/c-slider/c-slider.js"
 import Link from "next/link.js";
 import CBundle from '../bemit/08-blocks/b-bundle/b-bundle.js'
+
 const Home = ({dataHome}) =>{
 
   const p = 'b-home';
@@ -98,13 +99,14 @@ const Home = ({dataHome}) =>{
           <OContainer p={p} >
             <OCol p={p} cols={{sm: 4, md: 6, lg: 10}}>
               <h3 className={'o-font-title-home'}>{dataHome.bHome.bHomeBlockSix.bHomeText}</h3>
-              <button className={'button-simple'}>
-                <div className={`wrapper-btn-proyectos`}><span>< Link href={`/${dataHome.bHome.bHomeBlockSix.bHomeButtonSlug}`}>{dataHome.bHome.bHomeBlockSix.bHomeButtonText}</Link></span></div>
-                  <span className={`btn-circle`}>
-                    <span className={`arrow`}></span>
-                  </span>
-                </button>
-
+                <div className={'button-simple black'}>
+                            <div className={`wrapper-btn-proyectos`}>
+                              <span><Link href={dataHome.bHome.bHomeBlockSix.bHomeButtonSlug}>{dataHome.bHome.bHomeBlockSix.bHomeButtonText}</Link></span>
+                            </div>
+                            <span className={`btn-circle`}>
+                              <span className={`arrow`}></span>
+                            </span>
+                </div>
             </OCol>
           </OContainer>
         </div>

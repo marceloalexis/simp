@@ -13,23 +13,23 @@ const p = 'c-item-kit'
             dataItemKit.map( e => {
                 return(
                     <div>
-                            <OContainer key={e.bSolutionTitle} p={p}>
+                            <OContainer key={e.bSolutionSlug} p={p}>
                                 <OCol p={p} cols={{sm:4, lg:1}}>
                                     <div className={`${p}__wrapper-slug`}>
                                         <span>{e.bSolutionSlug}</span>
                                     </div>
                                 </OCol>         
-                                <OCol cols={{sm:4, lg:3}}>
+                                <OCol p={p} cols={{sm:4, lg:3}}>
                                     <div className={`${p}__wrapper-image`}>
                                         <img src={e.bSolutionImage.link}/>
                                     </div>
                                 </OCol>
-                                <OCol cols={{sm:4, lg:3}}>
+                                <OCol p={p} cols={{sm:4, lg:3}}>
                                     <div className={`${p}__wrapper-title`}>
                                         <h3 className={'o-font-title-kit'}>{e.bSolutionTitle}</h3>
                                     </div>
                                 </OCol>
-                                <OCol cols={{sm:4, lg:5}}>
+                                <OCol p={p} cols={{sm:4, lg:5}}>
                                     <div className={`${p}__wrapper-text`}>
                                         <p >{e.bSolutionText}</p>
                                     </div>

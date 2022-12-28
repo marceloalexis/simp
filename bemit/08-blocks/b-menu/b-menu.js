@@ -2,10 +2,12 @@ import React, { useContext } from "react"
 import OContainer from "../../07-objects/o-container/o-container.js"
 import OCol from "../../07-objects/o-col/o-col.js"
 import Link from "next/link"
+import { useRouter } from 'next/router';
 import { MainContext } from "../../../contexts/Main.context.js"
 
 const BMenu = () => {
 	const p = 'b-menu';
+	const router = useRouter();
 	const {globalData} = useContext(MainContext);
 	const {menuOpen, setMenuOpen } = useContext(MainContext);
 	const closeMenu = () => {
@@ -22,7 +24,7 @@ const BMenu = () => {
 		<li key={a.item_menu.slug_item} className={`o-font-list-menu`}>
 			<div className={`${p}__wrapper-menu-item`}>
 				<div className={`${p}__item-menu`}>
-					<Link href={`${a.item_menu.slug_item}`} onClick={closeMenu}>{a.item_menu.text_item}</Link>
+					<Link className={router.pathname == `${a.item_menu.slug_item}` ? "menu-active" : ""} href={`${a.item_menu.slug_item}`} onClick={closeMenu}>{a.item_menu.text_item}</Link>
 				</div>
 			</div>
 		</li>
@@ -32,7 +34,7 @@ const BMenu = () => {
 		<li key={a.item_menu.slug_item} className={`o-font-list-menu`}>
 			<div className={`${p}__wrapper-menu-item`}>
 				<div className={`${p}__item-menu`}>
-					<Link href={`${a.item_menu.slug_item}`} onClick={closeMenu}>{a.item_menu.text_item}</Link>
+					<Link className={router.pathname == `${a.item_menu.slug_item}` ? "menu-active" : ""} href={`${a.item_menu.slug_item}`} onClick={closeMenu}>{a.item_menu.text_item}</Link>
 				</div>
 			</div>
 		</li>

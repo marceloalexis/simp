@@ -15,7 +15,10 @@
     &__container{
         background: rgb(57 56 58 / 50%) !important;
         -webkit-backdrop-filter: saturate(180%)blur(20px);
-        backdrop-filter: saturate(180%)blur(20px);         
+        backdrop-filter: saturate(180%)blur(20px);
+        @include md{
+            background: transparent !important;
+        }         
     }
     &__col{
         background: transparent;

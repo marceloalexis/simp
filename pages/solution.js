@@ -55,12 +55,18 @@ const p = 'b-solution'
                       <div className={`${p}__wrapper`}>
                         <h3 className={'o-font-title-home'} dangerouslySetInnerHTML={{__html: dataSolution.bSolution.bSolutionBlockTwo.bSolutionTitle}}></h3>
                         <div className={'o-font-text'} dangerouslySetInnerHTML={{__html: dataSolution.bSolution.bSolutionBlockTwo.bSolutionText}}></div>
-                        <button className={'button-simple black'}>
-                          <div className={`wrapper-btn-proyectos`}><span>{dataSolution.bSolution.bSolutionBlockTwo.bSolutionButtonText}</span></div>
+                        
+                        
+                        <div className={'button-simple black'}>
+                            <div className={`wrapper-btn-proyectos`}>
+                              <div><Link href={dataSolution.bSolution.bSolutionBlockTwo.bSolutionButtonSlug}>
+                                {dataSolution.bSolution.bSolutionBlockTwo.bSolutionButtonText}</Link></div>
+                            </div>
                             <span className={`btn-circle`}>
                               <span className={`arrow`}></span>
                             </span>
-                        </button>
+                        </div>
+                        
                       </div>
                     </OCol>
                   </OContainer>
@@ -74,10 +80,11 @@ const p = 'b-solution'
                       </div>
                     </OCol>
                   </OContainer>
-                  <CItemKit
-                    dataItemKit={dataSolution.bSolution.bSolutionBlockThree.bSolutionItems}
-                  >
-                  </CItemKit>
+                  <OContainer>
+                    <OCol cols={{lgPush: 1, lg: 10 }}>
+                      <CItemKit dataItemKit={dataSolution.bSolution.bSolutionBlockThree.bSolutionItems}/>
+                    </OCol>
+                  </OContainer>
                 </div>
 
                 <CInfoText

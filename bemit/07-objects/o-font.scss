@@ -11,6 +11,9 @@
 	&-title-post{
 		@include a-set($font-title-post);
 	}
+	&-text-button{
+		@include a-set($font-text-button);
+	}
 	&-text-post{
 		@include a-set($font-text-post);
 	}

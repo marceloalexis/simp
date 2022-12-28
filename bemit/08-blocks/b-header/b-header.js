@@ -15,7 +15,7 @@ const Bheader = () => {
 		}
 
 		const buttons = [globalData.buttons_head.map((e) => (
-			<span className={'o-font-text-button'} key={e.item_button.slug_button}><Link href=''>{e.item_button.title_button}</Link></span>
+			<span className={'o-font-text-button'} key={e.item_button.slug_button}><Link href={e.item_button.slug_button}>{e.item_button.title_button}</Link></span>
 			))]
 		const logoImgLink = globalData.logo.url
 

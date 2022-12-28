@@ -63,3 +63,9 @@
         }
     }
 }
+.content-cont{
+    flex-direction: column-reverse;
+    @include md{
+        flex-direction: row;
+    }
+}

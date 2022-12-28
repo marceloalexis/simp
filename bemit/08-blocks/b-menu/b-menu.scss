@@ -93,6 +93,9 @@
 			display: block;
 		}
 	}
+	&__wrapper-list-menu ul li a.menu-active{
+		color: $color-blue;
+	}
 	&__wrapper-list-menu ul li{
 		color: $color-white;
 		margin: 12.5px 0;
