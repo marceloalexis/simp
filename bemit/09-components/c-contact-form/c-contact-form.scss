@@ -1,10 +1,22 @@
 .c-contact-form{
+
     &__wrapper-field &__title-first{
         font-size: 21px;
         font-weight: 900;
     }
     &__wrapper-field{
         margin-top: 50px;
+    }
+    &__wrapper-field.name-c &__field{
+        width: 100%;
+        display: block;
+        @include md{
+            width: 49%;
+            display: inline-block;
+            &:last-child{
+                margin-left: 2%;
+            }           
+        }
     }
     &__wrapper-field p{
         color: $color-white;

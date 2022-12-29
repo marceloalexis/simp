@@ -13,7 +13,7 @@ const p = 'c-item-kit'
             dataItemKit.map( e => {
                 return(
                     <div>
-                            <OContainer key={e.bSolutionSlug} p={p}>
+                            <OContainer key={e.bSolutionSlug} p={p} extraClasses={'kit-a'}>
                                 <OCol p={p} cols={{sm:4, lg:1}}>
                                     <div className={`${p}__wrapper-slug`}>
                                         <span>{e.bSolutionSlug}</span>

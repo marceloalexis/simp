@@ -3,7 +3,7 @@ import OCol from "../../07-objects/o-col/o-col.js"
 import OContainer from "../../07-objects/o-container/o-container.js"
 
 
-const CVideoLayout = ({dataTitleVideo}) => {
+const CVideoLayout = ({dataTitleVideo, dataSrcVideo, posterVideo}) => {
     const p = 'c-video'
           const videoRef = useRef(null);
         
@@ -36,12 +36,12 @@ const CVideoLayout = ({dataTitleVideo}) => {
                     <div className={`${p}__wrapper`}>
                         <div className={`${p}__video-layout`}>
                             <div className={`${p}__overlay`}></div>
-                            <video poster={"/sunset-figure.jpg"} muted={isMuted} ref={videoRef} autoPlay loop>
-                            <source src="/simpello-video.mp4" type="video/mp4" />
+                            <video poster={posterVideo} muted={isMuted} ref={videoRef} autoPlay loop>
+                            <source src={dataSrcVideo} type="video/mp4" />
                             </video>
                         </div>
                         <div className={`${p}__title-content`}>
-                            <h2 className={`o-font-title-home`}>{dataTitleVideo}</h2>
+                            <h2 className={`o-font-title-home`} dangerouslySetInnerHTML={{__html: dataTitleVideo}}></h2>
                         </div>
                         <div className={`${p}__controls-video`}>
                             <ul>

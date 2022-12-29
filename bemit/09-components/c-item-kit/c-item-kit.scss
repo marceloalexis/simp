@@ -1,5 +1,11 @@
 .c-item-kit{
     $p: &;
+    &__container.kit-a{
+        display: initial;
+        @include md{
+            display: flex;
+        }
+    }
     margin-top: 100px;
     &__container{
         padding: 80px 20px;

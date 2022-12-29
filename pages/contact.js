@@ -67,7 +67,10 @@ const Contact = ({id, dataContact}) =>{
                 </div>
             </OCol>
             <OCol p={p} cols={{lg:7}}>
-                <CContactForm></CContactForm>
+            <CContactForm 
+                    portalId={'23649077'}
+                    formId={'77b85bf1-9476-4cac-9f25-dcf8430d25b1'}
+                  />
             </OCol>
         </OContainer>
       </div>

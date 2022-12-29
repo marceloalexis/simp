@@ -24,7 +24,8 @@ const p = 'b-solution'
             <div className={`${p}`}>
                 <CVideoLayout
                     dataTitleVideo={dataSolution.bSolution.bSolutionBlockOne.bSolutionTitle}
-                    dataSrcVideo={dataSolution.bSolution.bSolutionBlockOne.bSolutionVideo.link}
+                    dataSrcVideo={"/solution-video.mp4"}
+                    posterVideo={dataSolution.bSolution.bSolutionBlockOne.poster.link}
                 >
                 </CVideoLayout>
                 <div className={`${p}__block1`}>
@@ -34,7 +35,6 @@ const p = 'b-solution'
                         <div className={'o-font-text'} dangerouslySetInnerHTML={{__html: dataSolution.bSolution.bSolutionBlockOne.bSolutionText}}>
                         </div>
                       </div>
-
                     </OCol>
                   </OContainer>
                 </div>
@@ -115,6 +115,14 @@ export async function getStaticProps(){
                       bSolutionVideo {
                         altText
                         link
+                      }
+                      poster {
+                        altText
+                        link
+                        mediaDetails {
+                          width
+                          height
+                        }
                       }
                     }
                     bSolutionBlockTwo {

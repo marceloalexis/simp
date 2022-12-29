@@ -43,9 +43,9 @@ const Home = ({dataHome}) =>{
         <div className={`${p}__block1`}>
         <CVideoLayout 
         dataTitleVideo={dataHome.bHome.bHomeBlockOne.bHomeTitle}
-        dataSrcVideo={dataHome.bHome.bHomeBlockOne.bHomeVideo.link}
-        >
-        </CVideoLayout>
+        dataSrcVideo={"/simpello-video.mp4"}
+        posterVideo={dataHome.bHome.bHomeBlockOne.poster.link}
+        />
         </div>
 
         <div className={`${p}__block2 cursor-about`}>
@@ -134,6 +134,14 @@ export async function getStaticProps(){
                           bHomeVideo {
                             altText
                             link
+                          }
+                          poster {
+                            altText
+                            link
+                            mediaDetails {
+                              width
+                              height
+                            }
                           }
                           bHomeTitle
                         }
