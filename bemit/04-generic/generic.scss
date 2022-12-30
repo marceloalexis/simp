@@ -76,9 +76,59 @@ body.is-menu-open{
 
 .b-home{
 	.c-video__title-content h2{
-		text-align: center;
+		text-align: left;
+		@include md{
+			text-align: center;
+		}
 	}
 	background-color: $color-white;
+	
+	.c-video__wrapper{
+		height: 60vh;
+		@include md{
+			height: 100vh;
+		}
+	}
+	.c-video__video-layout video{
+		.c-video__overlay{
+			display: none;
+			@include md{
+				display: block;
+			}
+		}
+		height: 60vh;
+		@include md{
+			height: 100vh;
+		}
+	}
+	.c-video__controls-video{
+		display: none;
+	}
+	.c-video__title-content{
+		top: inherit;
+		left: 0;
+		bottom: 30px;
+		@include lg{
+			h2{
+				max-width: 1120px;
+				text-align: left;
+			}
+		}
+		@include xl{
+			h2{
+				max-width: 1180px;
+				text-align: left;
+				line-height: 65px;
+			}
+		}
+		@include xxl{
+			h2{
+				max-width: 1600px;
+				text-align: left;
+			}			
+		}
+
+	}
 	&__block2{
 		background-color: $color-white;
 		min-height: 100vh;

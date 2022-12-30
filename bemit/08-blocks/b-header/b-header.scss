@@ -42,13 +42,13 @@
 	&__button{
 		display: flex;
 		justify-content: flex-end;
-		& span:last-child{
+		span:last-child{
 			display: none;
 			@include lg{
 				display: inline-block;
 			}
 		}
-		& span{
+		span{
 			margin: 0px 5px;
 		}
 	}
