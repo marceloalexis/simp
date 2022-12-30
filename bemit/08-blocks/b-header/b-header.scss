@@ -67,6 +67,12 @@
 			color: var(--color-white);
 		}
 	}
+	&__button span:last-child{
+		display: none;
+		@include md{
+			display: block;
+		}
+	}
 	&__button span a{
 		border-radius: 40px;
 		background: $color-blue;
