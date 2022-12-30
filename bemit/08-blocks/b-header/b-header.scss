@@ -43,6 +43,7 @@
 		display: flex;
 		justify-content: flex-end;
 		& span:last-child{
+			display: none;
 			@include lg{
 				display: inline-block;
 			}

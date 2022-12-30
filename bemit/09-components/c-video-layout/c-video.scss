@@ -45,6 +45,7 @@
         }
     }
     &__overlay{
+        display: none;
         position: absolute;
         width: 100%;
         height: 100vh;
@@ -53,6 +54,9 @@
 		background: -webkit-linear-gradient(180deg, rgba(0,0,0,0) 47%, rgba(0,0,0,1) 100%);
 		background: linear-gradient(180deg, rgba(0,0,0,0) 47%, rgba(0,0,0,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+        @include lg{
+            display: block;
+        }
     }
     &__btn-play{
         display: block;
