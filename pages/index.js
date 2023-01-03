@@ -107,6 +107,16 @@ const Home = ({dataHome}) =>{
                               <span className={`arrow`}></span>
                             </span>
                 </div>
+              <div className={`${p}__wrapper-img-float`}>
+                <span>
+                  <Image
+                    src={dataHome.bHome.bHomeBlockSix.bHomeFloatImage.link}
+                    alt={dataHome.bHome.bHomeBlockSix.bHomeFloatImage.altText}
+                    height={dataHome.bHome.bHomeBlockSix.bHomeFloatImage.mediaDetails.height}
+                    width={dataHome.bHome.bHomeBlockSix.bHomeFloatImage.mediaDetails.width}
+                  />
+                </span>
+              </div>
             </OCol>
           </OContainer>
         </div>
@@ -114,10 +124,7 @@ const Home = ({dataHome}) =>{
 
       </div>
     </BLayout>
-
-
   )
-
 }
 
 export async function getStaticProps(){

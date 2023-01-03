@@ -102,7 +102,7 @@ body.is-menu-open{
 		}
 	}
 	.c-video__controls-video{
-		display: none;
+		display: block;
 	}
 	.c-video__title-content{
 		top: inherit;
@@ -111,23 +111,24 @@ body.is-menu-open{
 		@include lg{
 			h2{
 				max-width: 1120px;
-				text-align: left;
+				text-align: center;
 			}
+			top: calc(50% - 20px);
+			left: inherit;
 		}
 		@include xl{
 			h2{
 				max-width: 1180px;
-				text-align: left;
+				text-align: center;
 				line-height: 65px;
 			}
 		}
 		@include xxl{
 			h2{
 				max-width: 1600px;
-				text-align: left;
+				text-align: center;
 			}			
 		}
-
 	}
 	&__block2{
 		background-color: $color-white;
@@ -203,6 +204,7 @@ body.is-menu-open{
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		position: relative;
 	}
 	&__block6 .o-container{
 		margin-top: auto;
@@ -210,6 +212,13 @@ body.is-menu-open{
 	}
 	&__block6 h3{
 		color: $color-white;
+	}
+	&__block6 &__wrapper-img-float{
+		width: 450px;
+		display: block;
+		position: absolute;
+		right: 10%;
+		bottom: -20%;
 	}
 	&__col-main{
 		margin: auto;
@@ -289,7 +298,6 @@ body.is-menu-open{
 				text-align: left;
 			}			
 		}
-
 	}
 	&__block1{
 		padding: 10% 0;
