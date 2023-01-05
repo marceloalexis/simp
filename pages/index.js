@@ -1,6 +1,6 @@
 import React from "react"
-import Head from "next/head";
-import Image from "next/image.js";
+import Head from "next/head"
+import Image from "next/image.js"
 import OCol from "../bemit/07-objects/o-col/o-col.js"
 import OContainer from "../bemit/07-objects/o-container/o-container.js"
 import BLayout from "../bemit/08-blocks/b-layout/b-layout.js"
@@ -8,11 +8,10 @@ import CVideoLayout from "../bemit/09-components/c-video-layout/c-video.js"
 import CTitleText from "../bemit/09-components/c-title-text/c-title-text.js"
 import CInfoText from "../bemit/09-components/c-info-text/c-info-text.js"
 import CSlider from "../bemit/09-components/c-slider/c-slider.js"
-import Link from "next/link.js";
+import Link from "next/link.js"
 import CBundle from '../bemit/08-blocks/b-bundle/b-bundle.js'
 
 const Home = ({dataHome}) =>{
-
   const p = 'b-home';
 
   const availableList = dataHome.bHome.bHomeBlockTwo.bHomeAvailable.bHomeItems.map((e) => (
@@ -40,15 +39,17 @@ const Home = ({dataHome}) =>{
       </Head>
       <div className={`${p}`}>
        <CBundle/>
-        <div className={`${p}__block1`}>
-        <CVideoLayout 
+        <div className={`${p}__block1` }data-scroll-section >
+          <div  id={'#scroll-video'}>
+        <CVideoLayout
         dataTitleVideo={dataHome.bHome.bHomeBlockOne.bHomeTitle}
         dataSrcVideo={"/simpello-video.mp4"}
         posterVideo={dataHome.bHome.bHomeBlockOne.poster.link}
         />
         </div>
+        </div>
 
-        <div className={`${p}__block2 cursor-about`}>
+        <div className={`${p}__block2 cursor-about`} data-scroll-section>
           <div className={`${p}__wrapper`}>
           
             <OContainer p={p}>
@@ -72,7 +73,7 @@ const Home = ({dataHome}) =>{
           
         </div>
 
-        <div className={`${p}__block3`}>
+        <div className={`${p}__block3`} data-scroll-section>
           <OContainer P={p}>
             <OCol p={p} cols={{ sm: 4, md: 6, lg:12}}>
                 <div className={`${p}__wrapper`}>
@@ -82,11 +83,11 @@ const Home = ({dataHome}) =>{
             </OCol>
           </OContainer>
         </div>
-      <div className={`${p}__block4 cursor-drag`}>
+      <div className={`${p}__block4`} data-scroll-section>
         <CSlider dataSlide={dataHome.bHome.bHomeBlockFour.bHomeSlider}></CSlider>
       </div>
 
-      <div className={`${p}__block5`}>
+      <div className={`${p}__block5`} data-scroll-section>
         <CInfoText
                 dTitle={dataHome.bHome.bHomeBlockFive.bHomeTitle}
                 dContent={dataHome.bHome.bHomeBlockFive.bHomeText}
@@ -95,7 +96,7 @@ const Home = ({dataHome}) =>{
         >
         </CInfoText>
         </div>
-        <div className={`${p}__block6`} style={{background: `url(${dataHome.bHome.bHomeBlockSix.bHomeBackgroundImage.link})`}}>
+        <div className={`${p}__block6`} data-scroll-section style={{background: `url(${dataHome.bHome.bHomeBlockSix.bHomeBackgroundImage.link})`}}>
           <OContainer p={p} >
             <OCol p={p} cols={{sm: 4, md: 6, lg: 10}}>
               <h3 className={'o-font-title-home'}>{dataHome.bHome.bHomeBlockSix.bHomeText}</h3>

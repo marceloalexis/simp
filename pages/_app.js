@@ -7,7 +7,6 @@ import BCookies from '../bemit/08-blocks/b-cookies/b-cookies.js'
 import {AnimatePresence} from 'framer-motion'
 import { gsap } from "gsap"
 import { ScrollTrigger } from '../node_modules/gsap/dist/ScrollTrigger.js';
-
 gsap.registerPlugin(ScrollTrigger);
 
 import 'normalize.css'

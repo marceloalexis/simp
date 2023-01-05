@@ -19,19 +19,13 @@
     &__container &__wrapper-image{
         opacity: 1;
         @include md{
-         opacity: 0;
+         opacity: 1;
         }
         
     }
     &__container:hover &__wrapper-image{
-        img{
-            transform: scale(1);
-        }
         opacity: 1;
-        @include md{
-            img{
-                transform: scale(2.8);
-            }     
+        @include md{  
         }
     }
     & hr{
@@ -64,7 +58,7 @@
             opacity: 1;
             @include md{
                 display: block;
-                width: 40%;
+                width: 60%;
                 margin: auto;
             }
         }

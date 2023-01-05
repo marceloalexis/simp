@@ -47,7 +47,7 @@ const BFooter = () => {
 	))]
 
 	return(
-		<div className={`${p}`}>
+		<div className={`${p}`} data-scroll-section>
 			<OContainer p={p}>
 				<OCol p={p} cols={{sm: 4, lg: 2}}>
 					<div className={`${p}__wrapper`}>

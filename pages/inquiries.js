@@ -14,7 +14,7 @@ const Inquiries = ({dataInquiries}) => {
                     <meta name="description" content={dataInquiries.seo.opengraphDescription}/>
                     <meta name="keywords" content={dataInquiries.seo.metaKeywords}/>
                 </Head>
-                <div className={`${p}`} style={{background: `url(${dataInquiries.bSupport.bSupportBackground.link})`}}>
+                <div className={`${p}`} data-scroll-section style={{background: `url(${dataInquiries.bSupport.bSupportBackground.link})`}}>
                     <OContainer p={p} extraClasses={`${p}__content`}>
                         <OCol p={p} cols={{lg:7}}>
                             <div className={`${p}__wrapper`}>

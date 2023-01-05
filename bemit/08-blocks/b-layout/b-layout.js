@@ -1,6 +1,7 @@
 import React from 'react';
-import PAGE_TRANSITION from '../../../utils/pageTransitionsVars.js';
-import {LazyMotion, domAnimation, m} from 'framer-motion';
+import PAGE_TRANSITION from '../../../utils/pageTransitionsVars.js'
+import {LazyMotion, domAnimation, m} from 'framer-motion'
+import BVirtualScroll from '../b-virtual-scroll/b-virtual-scroll.js'
 import BFooter from '../../08-blocks/b-footer/b-footer.js'
 const pageMotionProps = {
 	initial: { opacity: 0 },
@@ -29,8 +30,10 @@ const BLayout = ({children}) => {
 		
 		<LazyMotion features={domAnimation}>
 		<m.main className={`${p}`} {...pageMotionProps}>
+		<BVirtualScroll>
 			{children}
 			<BFooter />
+		</BVirtualScroll>
 		</m.main>
 		</LazyMotion>
 		);

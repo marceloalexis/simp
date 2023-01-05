@@ -17,7 +17,7 @@ const Blog = ({posts, blog}) =>{
               <meta name="description" content={blog.seo.opengraphDescription}/>
               <meta name="keywords" content={blog.seo.metaKeywords}/>
       </Head>
-      <div className={`${p}`} >
+      <div className={`${p}`} data-scroll-section >
       <CBundle></CBundle>
       <CPostsFeatured data={posts}></CPostsFeatured>
       <CPosts posts={posts}></CPosts>

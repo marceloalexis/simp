@@ -197,6 +197,7 @@ body.is-menu-open{
 		margin: 0 auto;
 	}
 	&__block6{
+		overflow: hidden;
 		display: flex;
 		color: $color-white;
 		height: 100vh;

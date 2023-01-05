@@ -21,14 +21,15 @@ const p = 'b-solution'
                 <meta name="description" content={dataSolution.seo.opengraphDescription}/>
                 <meta name="keywords" content={dataSolution.seo.metaKeywords}/>
             </Head>
-            <div className={`${p}`}>
+            <div className={`${p}`} >
+                <div className={`${p}_bloc`} data-scroll-section>
                 <CVideoLayout
                     dataTitleVideo={dataSolution.bSolution.bSolutionBlockOne.bSolutionTitle}
                     dataSrcVideo={"/solution-video.mp4"}
-                    posterVideo={dataSolution.bSolution.bSolutionBlockOne.poster.link}
-                >
+                    posterVideo={dataSolution.bSolution.bSolutionBlockOne.poster.link}>
                 </CVideoLayout>
-                <div className={`${p}__block1`}>
+                </div>
+                <div className={`${p}__block1`} data-scroll-section>
                   <OContainer p={p}>
                     <OCol p={p} cols={{lg:12}}>
                       <div className={`${p}__wrapper`}>
@@ -38,7 +39,7 @@ const p = 'b-solution'
                     </OCol>
                   </OContainer>
                 </div>
-                <div className={`${p}__block2`}>
+                <div className={`${p}__block2`} data-scroll-section>
                   <OContainer p={p} extraClasses={`o-container--no-padding`}>
                     <OCol p={p} extraClasses={`o-col--no-padding`} cols={{lg: 4}}>
                       <div className={`${p}__wrapper image-wr`}>
@@ -71,7 +72,7 @@ const p = 'b-solution'
                     </OCol>
                   </OContainer>
                 </div>
-                <div className={`${p}__block3`}>
+                <div className={`${p}__block3`} data-scroll-section>
                   <OContainer p={p}>
                     <OCol p={p} cols={{lg:6}}>
                       <div className={`${p}__wrapper`}>
@@ -87,6 +88,7 @@ const p = 'b-solution'
                   </OContainer>
                 </div>
 
+                <div data-scroll-section>
                 <CInfoText
                   dTitle={dataSolution.bSolution.bSolutionBlockFour.bSolutionTitle}
                   dContent={dataSolution.bSolution.bSolutionBlockFour.bSolutionText}
@@ -94,6 +96,7 @@ const p = 'b-solution'
                   dSlugButton={dataSolution.bSolution.bSolutionBlockFour.bSolutionButtonSlug}
                 >
                 </CInfoText>
+                </div>
             </div>
         </BLayout>
     )

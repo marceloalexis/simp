@@ -20,7 +20,7 @@ const p = 'b-story'
             <meta name="keywords" content={dataStory.seo.metaKeywords}/>
         </Head>
         <div className={`${p}`} >
-          <div className={`${p}__block1`} style={{background: `url(${dataStory.bStory.bStoryBlockOne.bStoryImage.link})`}}>
+          <div className={`${p}__block1`} data-scroll-section style={{background: `url(${dataStory.bStory.bStoryBlockOne.bStoryImage.link})`}}>
             <div className={`${p}__overlay`}>   
               <OContainer p={p}>
                   <OCol p={p} cols={{lg:8}}>
@@ -33,7 +33,7 @@ const p = 'b-story'
             </div> 
           </div>
 
-          <div className={`${p}__block2`}>
+          <div className={`${p}__block2`} data-scroll-section>
             <OContainer p={p}>
               <OCol p={p} cols={{lg:8}}>
                 <div className={`${p}__wrapper`}>
@@ -45,14 +45,14 @@ const p = 'b-story'
           </div>
         </div>
 
-        <div className={`${p}__block3`}>
+        <div className={`${p}__block3`} data-scroll-section>
           <CBlocks
            dataBlocks={dataStory.bStory.bStoryBlockThree.bStoryItems}     
           >
           </CBlocks>
         </div>
 
-        <div className={`${p}__block4`} style={{background: `url(${dataStory.bStory.bStoryBlockFour.bStoryImage.link})`}}>
+        <div className={`${p}__block4`} data-scroll-section style={{background: `url(${dataStory.bStory.bStoryBlockFour.bStoryImage.link})`}}>
            <div className={`${p}__overlay`}>   
                 <OContainer p={p}>
                   <OCol p={p} cols={{lg:8, lgPush:2}}>
@@ -65,7 +65,7 @@ const p = 'b-story'
             </div> 
         </div>
 
-        <div className={`${p}__block5`}>
+        <div className={`${p}__block5`} data-scroll-section>
           <OContainer p={p} extraClasses={`o-container--no-padding ${p}__image`}>
             <OCol p={p} extraClasses={'o-col--no-padding'} cols={{lg:9}}>
               <div className={`${p}__wrapper`}>
@@ -78,7 +78,7 @@ const p = 'b-story'
               </div>
             </OCol>
           </OContainer>
-          <OContainer p={p} extraClasses={`${p}__content`}>
+          <OContainer p={p} extraClasses={`${p}__content`} >
             <OCol p={p} cols={{lg:8, lgPush: 2}}>
             <div className={`${p}__wrapper`}>
               <h3 className={'o-font-title-home'}>{dataStory.bStory.bStoryBlockFive.bStoryTitle}</h3>
@@ -88,7 +88,7 @@ const p = 'b-story'
           </OContainer>
         </div>
 
-        <div className={`${p}__block6`}>
+        <div className={`${p}__block6`} data-scroll-section>
           <OContainer p={p} extraClasses={`o-container--no-padding ${p}__image`}>
             <OCol p={p} extraClasses={'o-col--no-padding'} cols={{lg:9, lgPush: 3}}>
               <div className={`${p}__wrapper`}>

@@ -17,7 +17,7 @@ const Request = ({ dataRequest }) =>{
           <meta name="description" content={dataRequest.seo.opengraphDescription}/>
           <meta name="keywords" content={dataRequest.seo.metaKeywords}/>
         </Head>
-        <div className={`${p}`} >
+        <div className={`${p}`} data-scroll-section>
           <OContainer p={p}>
               <OCol p={p} cols={{lg:10, lgPush:1}}>
                   <div className={`${p}__wrapper-title`}>

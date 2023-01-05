@@ -1,18 +1,23 @@
-import React from "react";
-import BVirtualScrollC from './b-virtual-scroll-only-in-client.js'
+import React from 'react';
+import dynamic from 'next/dynamic'
 
+const BVirtualScrollOnlyInClient = dynamic(
+	() => import('./b-virtual-scroll-only-in-client'),
+	{ ssr: false }
+)
 
 const BVirtualScroll = ({ children }) => {
 
+	const p = 'b-virtual-scroll';
+
 	return(
-
-			<div className={`${p} js-${p} smooth-scroll`}>
-                <BVirtualScrollC>
+		<>
+			<div className={`${p} js-${p}`} data-scroll-container>
 				{children}
-                </BVirtualScrollC>
 			</div>
-
-	)
+			<BVirtualScrollOnlyInClient />
+		</>
+	);
 };
 
 export default BVirtualScroll;
